@@ -9,18 +9,6 @@ pipeline {
       steps {
         git 'https://github.com/PradeepGopalgowda/helloworldJs.git'
       }
-    }
-        
-    stage('Install dependencies') {
-      steps {
-        sh 'npm install'
-      }
-    }
-     
-    stage('Test') {
-      steps {
-         sh 'npm test'
-      }
-    }      
+    }    
   }
 }
